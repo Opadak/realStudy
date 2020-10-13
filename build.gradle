@@ -1,0 +1,33 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext.kotlin_version = "1.3.72"
+    //내가 사용하는 코틀린 버전
+
+    repositories {
+        google()
+        jcenter()
+    }
+    //외부에 있는 google과 jcenter (외부저장소)에서 가지고 온다
+    dependencies {
+        classpath "com.android.tools.build:gradle:4.0.1"
+        //gradle 버전
+        //gradle 이 필요한 이유는 안드로이드 스튜디오에서 제공하는 것 외의 다른기능을
+        // 외부 라이브러리에서 가지고 오는데 외부 라이브러리를 관리하기 위해 필요하다.
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    //의존성
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

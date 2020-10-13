@@ -1,0 +1,5 @@
+include ':app'
+rootProject.name = "My Application"
+
+//건들지 않는데 한 프로젝트 안에 앰을 하나 더 만들때 건들 수도 있음.
+// 하지만 그럴때 자동적으로 바뀜. 신경 안써도 될 듯.

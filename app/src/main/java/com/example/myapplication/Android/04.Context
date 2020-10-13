@@ -1,0 +1,18 @@
+
+
+04.Context
+-문맥
+-액티비티가 가지고 있는 주변 정보
+-class가 가지고 있는 주변 정보와 앱이 돌아가는 정보와 일치
+
+
+
+val intent = Intent(this@intent1, intent2::class.java)
+
+this@intent1 > packagecontext
+
+this = this@intent1  동일 하지만 this만 적으면 오류가 뜰 수 도 있음.
+
+
+
+intent2::class.java > 다른 클래스를
