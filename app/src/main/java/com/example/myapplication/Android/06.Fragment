@@ -17,4 +17,28 @@ Fragment
 
 
 사용처
--액티비티의 파트를 나누어서 책임진다.....
+-액티비티의 파트를 나누어서 책임진다.
+
+
+Fragment
+- 라이프 사이클이 존재한다.
+- 라이프 사이클이 액티비티 종속적이다 (액티비티 일부분을 fragment가 책임을 지고 있기 때문이다.)
+
+
+단점) 프라그먼트의 라이프 사이클을 관리 해줘야한다.
+하지만 사용하는 것이 유지보수를 할 때 보다더 편리하다.
+
+
+좀 더 자세한 내용
+https://developer.android.com/guide/components/fragments?hl=ko
+
+사용방법
+-xml에 ViewComponent로 추가한다. (코드가 생성될 때 같이 추가가 된다.)
+-코드 (동적)으로 추가한다.  (추가하고 싶을 때 추가하고 없애고 싶을 때 없앨 수 있다.)
+
+xml에서 container이 될 수 있는 것들이 있다. << 디자인탭에 나와있음.
+
+데이터 전달 방법
+- Activity -> Fragment : argument와 bundle
+- Fragment -> Activity : 자체 구현(리스너 구현)
+
