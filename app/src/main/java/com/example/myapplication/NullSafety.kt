@@ -29,7 +29,7 @@ class NullSafety : AppCompatActivity() {
         //Null safety 를 위한 도구
         val number4 = number1 ?: 10 // number4 = 10
 
-
+//,
 
 
     }
