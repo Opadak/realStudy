@@ -1,11 +1,10 @@
-package com.example.myapplication.kotlin
+package com.example.myapplication
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.widget.LinearLayout
 import android.widget.TextView
-import com.example.myapplication.R
 
 class AddViewActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,7 +15,12 @@ class AddViewActivity : AppCompatActivity() {
         //item list 준비
         val carList = ArrayList<CarForList>()
         for (i in 0 until 10) {
-            carList.add(CarForList("" + i + "번째 자동차", "" + i + "순위 엔진"))
+            carList.add(
+                CarForList(
+                    "" + i + "번째 자동차",
+                    "" + i + "순위 엔진"
+                )
+            )
         }
 
 
