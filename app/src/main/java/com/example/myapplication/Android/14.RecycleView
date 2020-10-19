@@ -1,0 +1,23 @@
+
+
+
+
+
+RecycleView *********** 이건 외워야 해!!!!!!!!!!!
+-장점
+    -listView의 개선판
+        -ViewHolder 포함
+
+     -유연하다
+        -LayoutManager
+            -Linear
+            -Gride
+            -StaggeredGrid
+
+
+
+
+
+
+
+
