@@ -14,9 +14,9 @@ class ListViewActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_list_view)
-        val carList = ArrayList<CarForList>()
+        val carList = ArrayList<CarForList2>()
         for (i in 0 until 10) {
-            carList.add(CarForList("" + i + "번째 자동차", "" + i + "순위 엔진"))
+            carList.add(CarForList2("" + i + "번째 자동차", "" + i + "순위 엔진"))
         }
 
         val adapter = ListViewAdapter(carList, this)
@@ -25,8 +25,8 @@ class ListViewActivity : AppCompatActivity() {
         listView.setOnItemClickListener { parent, view, position, id ->  //부모, 해당 뷰 , 그 아이템 , 그 아이템의 아이디
             // 이 아이템을 클릭했을 때 정보를 toast 메세지로 떠올리게 하는것
             val carName =
-                (adapter.getItem(position) as CarForList).name //해당 번 째 carforlist의 name이 나온다.
-            val carEngine = (adapter.getItem(position) as CarForList).engin
+                (adapter.getItem(position) as CarForList2).name //해당 번 째 carforlist의 name이 나온다.
+            val carEngine = (adapter.getItem(position) as CarForList2).engin
 
             Toast.makeText(this, "" + carName + " " + carEngine, Toast.LENGTH_SHORT).show()
         }
@@ -34,7 +34,7 @@ class ListViewActivity : AppCompatActivity() {
 }
 
 class ListViewAdapter(
-    val carForList: ArrayList<CarForList>,
+    val carForList: ArrayList<CarForList2>,
     val context: ListViewActivity
 ) : BaseAdapter() {
 

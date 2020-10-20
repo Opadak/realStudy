@@ -13,10 +13,10 @@ class AddViewActivity : AppCompatActivity() {
 
 
         //item list 준비
-        val carList = ArrayList<CarForList>()
+        val carList = ArrayList<CarForList2>()
         for (i in 0 until 10) {
             carList.add(
-                CarForList(
+                CarForList2(
                     "" + i + "번째 자동차",
                     "" + i + "순위 엔진"
                 )
@@ -39,7 +39,7 @@ class AddViewActivity : AppCompatActivity() {
     }
 }
 
-class CarForList(val name: String, val engin: String) {
+class CarForList2(val name: String, val engin: String) {
 
 
 }
