@@ -27,7 +27,7 @@ class AddViewActivity : AppCompatActivity() {
         val container = findViewById<LinearLayout>(R.id.addview_container)
         val inflater = LayoutInflater.from(this)
         for (i in 0 until carList.size) {
-            val itemView = inflater.inflate(R.layout.item_view, null)//..
+            val itemView = inflater.inflate(R.layout.item_view, null)//...
             val carnameView = itemView.findViewById<TextView>(R.id.car_name)
             val carEnginView = itemView.findViewById<TextView>(R.id.car_engin)
 
