@@ -19,7 +19,7 @@ android {
     defaultConfig {
         applicationId "com.example.myapplication"
         //패키지 명
-        minSdkVersion 23
+        minSdkVersion 15
         //우리가 만든 앱을 설치하려면 sdk 최소한 기준이 23이상이여야 한다.
         targetSdkVersion 29
         versionCode 1
@@ -40,6 +40,7 @@ android {
             //progard file
         }
     }
+           
 }
 
 dependencies {
@@ -62,5 +63,7 @@ dependencies {
     implementation "androidx.recyclerview:recyclerview:1.1.0"
     // For control over item selection of both touch and mouse driven selection
     implementation "androidx.recyclerview:recyclerview-selection:1.1.0-rc02"
+
+
 
 }
