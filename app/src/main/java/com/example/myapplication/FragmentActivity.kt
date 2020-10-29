@@ -1,22 +1,21 @@
-package com.example.myapplication.Android실습
+package com.example.myapplication
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.FragmentManager
+import com.example.myapplication.R
 import kotlinx.android.synthetic.main.activity_fragment.*
 
-class FragmentActivity : AppCompatActivity(), Fragment1.OnDataPassListener {
-    override fun onDataPass(data: String?) {
-        Log.d("pass",""+data)
-    }
+class FragmentActivity : AppCompatActivity() {
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fragment)
-        Log.d("Life_cycle","oncreate")
+        Log.d("Life_cycle", "oncreate")
 
-        val fragmentOne : Fragment1 = Fragment1()
+        val fragmentOne: Fragment1 = Fragment1()
 
         //프라그먼트의 데이터를 넣어주는 방법
         //bundle을 만들어줘서 프라그먼트에 끼어 넣어야 함.

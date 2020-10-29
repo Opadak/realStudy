@@ -1,4 +1,4 @@
-package com.example.myapplication.Android실습
+package com.example.myapplication
 
 import android.app.Activity
 import android.content.Intent

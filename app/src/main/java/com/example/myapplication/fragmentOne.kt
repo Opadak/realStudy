@@ -1,4 +1,4 @@
-package com.example.myapplication.Android실습
+package com.example.myapplication
 
 import android.os.Bundle
 import android.util.Log
@@ -8,7 +8,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.myapplication.R
 
-class fragmentThree : Fragment() {
+class fragmentOne : Fragment() {
+
     override fun onCreateView( //view를 그리는 애 ****
         inflater: LayoutInflater, // inflater > View 를 그려주는 애
         container: ViewGroup?,    // container > 부모 View

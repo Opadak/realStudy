@@ -1,4 +1,4 @@
-package com.example.myapplication.Android실습
+package com.example.myapplication
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -27,7 +27,7 @@ class TabPagerActivity : AppCompatActivity() {
 
 class PagerAdapter( //화면을 수평으로 보여주는!
     fragmentManager: FragmentManager, //pager가 fragment 를 사용하겠다. ****** (중요)
-    tabCount: Int
+    val tabCount: Int
 ) : FragmentStatePagerAdapter(fragmentManager) {
 
     override fun getItem(position: Int): Fragment { // item 하나를 찾을 때 실행됨!
