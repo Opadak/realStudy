@@ -64,6 +64,12 @@ dependencies {
     // For control over item selection of both touch and mouse driven selection
     implementation "androidx.recyclerview:recyclerview-selection:1.1.0-rc02"
 
-
+    implementation 'com.google.android.material:material:1.1.0'
+    //Tablayout implement
+    //우리가 사용하는 라이브러리 업데이트는 굉장히 보수적으로 진행 되어야 한다.
+    // 업데이트가 중요한 것이 아니다. ******
+    // 메이저 버전 코드가 변하면 더더욱 업데이트 x 이전 버전 지원 안될 가능성 농후
+    // 마이너 버전 코드는 하위 버전 지원 가능한 것들이 많다.
+    // ex> 1.2.0 이면 1이 메이저 2가 마이너 
 
 }

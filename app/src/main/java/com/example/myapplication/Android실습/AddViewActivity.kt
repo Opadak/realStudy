@@ -1,10 +1,11 @@
-package com.example.myapplication
+package com.example.myapplication.Android실습
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.widget.LinearLayout
 import android.widget.TextView
+import com.example.myapplication.R
 
 class AddViewActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

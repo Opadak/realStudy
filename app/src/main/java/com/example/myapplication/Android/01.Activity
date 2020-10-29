@@ -4,7 +4,6 @@
 -앱의 한 화면이다.
 -Life Cycle(수명주기) => 어떤 액티비티의 탄생이 있을 거고 죽음이 있을 거다.
 -http://developer.android.com <<구글에서 만든 안드로이드 개발자 문서
-
 -onCreate
 -onStart
 -onResume
